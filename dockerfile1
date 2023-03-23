@@ -4,7 +4,7 @@ LABLE EmailID="amanpatel.itprofessional@gmail.com"
 LABLE Mobile="7275580354"
 ENV Name=aman
 ENV Pass=aman@321
-RUN adduser $Name && echo "$Name:$Pass" |chpasswd 
+RUN adduser $Name && echo "$Name:$Pass" | chpasswd 
 RUN touch amanfile1
 RUM mkdir patel
 RUN apt update && apt install -y apache2 \
